@@ -2,19 +2,30 @@
 const uuid = require('uuid')
 const path = require('path')
 //чтобы создать девайс импортируем модель
-const {Device} = require('../models/models')
+const {Device, DeviceInfo} = require('../models/models')
 const ApiError = require('../error/ApiError')
 
 class DeviceController {
     async create(req, res, next) {
         try {
             //получим данные из тела запроса
-        const {name, price, brandId, typeId, info} = req.body
+        let {name, price, brandId, typeId, info} = req.body
         const {img} = req.files
         //ф-ция v4 генерирует айди
         let fileName = uuid.v4() + '.jpg'
         //ф-ция resolve адаптирует путь к папке в операционной системе
         img.mv(path.resolve(__dirname, '..', 'static', fileName))
+        //делаем проверку на инфо конкретного девайса
+        if(info) {
+            info = JSON.parse(info)
+            info.forEach(i => 
+                DeviceInfo.create({
+                    title: i.title,
+                    description: i.description,
+                    deviceId: device.id
+                })
+            )
+        }
 
         const device = await Device.create({name, price, brandId, typeId, img: fileName})
         return res.json(device)
@@ -50,7 +61,16 @@ class DeviceController {
     }
 
     async getOne(req, res) {
-        
+        const {id} = req.params
+        //в функцию передаем объект опций
+        const device = await Device.findOne(
+            {
+                where: {id},
+                //в поле инклюд получаем массив характеристик девайса
+                include: [{model: DeviceInfo, as: 'info'}]
+            },
+        )
+            return res.json(device)
     }
 }
 
