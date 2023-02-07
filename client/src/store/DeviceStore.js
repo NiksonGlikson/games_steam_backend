@@ -15,39 +15,17 @@ export default class DeviceStore {
         this._brands = [
             {id: 1, name: 'Samsung'},
             {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            {id: 2, name: 'Apple'},
-            
-
+            {id: 3, name: 'Lenovo'},
+            {id: 4, name: 'Asus'}
         ]
         this._devices = [
-            {id: 1, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fkz.e-katalog.com%2Flist%2F122%2F&psig=AOvVaw1JGhzOl7Wi0xa5JBOa-6hI&ust=1675511622078000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCix6ql-fwCFQAAAAAdAAAAABAE'},
-            {id: 2, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fkz.e-katalog.com%2Flist%2F122%2F&psig=AOvVaw1JGhzOl7Wi0xa5JBOa-6hI&ust=1675511622078000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCix6ql-fwCFQAAAAAdAAAAABAE'},
-            {id: 3, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fkz.e-katalog.com%2Flist%2F122%2F&psig=AOvVaw1JGhzOl7Wi0xa5JBOa-6hI&ust=1675511622078000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCix6ql-fwCFQAAAAAdAAAAABAE'},
-            {id: 4, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fkz.e-katalog.com%2Flist%2F122%2F&psig=AOvVaw1JGhzOl7Wi0xa5JBOa-6hI&ust=1675511622078000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNCix6ql-fwCFQAAAAAdAAAAABAE'},
+            {id: 1, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437097.jpg?w=1060&t=st=1675609765~exp=1675610365~hmac=55c479a39199d912be69050081b6a1fae27ebabe790f251dd1afa25d4e017836'},
+            {id: 2, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437097.jpg?w=1060&t=st=1675609765~exp=1675610365~hmac=55c479a39199d912be69050081b6a1fae27ebabe790f251dd1afa25d4e017836'},
+            {id: 3, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437097.jpg?w=1060&t=st=1675609765~exp=1675610365~hmac=55c479a39199d912be69050081b6a1fae27ebabe790f251dd1afa25d4e017836'},
+            {id: 4, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437097.jpg?w=1060&t=st=1675609765~exp=1675610365~hmac=55c479a39199d912be69050081b6a1fae27ebabe790f251dd1afa25d4e017836'},
+            {id: 5, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437097.jpg?w=1060&t=st=1675609765~exp=1675610365~hmac=55c479a39199d912be69050081b6a1fae27ebabe790f251dd1afa25d4e017836'},
+            {id: 6, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437097.jpg?w=1060&t=st=1675609765~exp=1675610365~hmac=55c479a39199d912be69050081b6a1fae27ebabe790f251dd1afa25d4e017836'},
+            {id: 7, name: 'Iphone 12 pro', price: 10000, rating: 5, img: 'https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437097.jpg?w=1060&t=st=1675609765~exp=1675610365~hmac=55c479a39199d912be69050081b6a1fae27ebabe790f251dd1afa25d4e017836'},
         ]
         this._selectedType = {}
         this._selectedBrand = {}

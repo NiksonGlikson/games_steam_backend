@@ -6,7 +6,7 @@ export default class UserStore {
     //переменная с _ означает что она не может меняться
     //конструктор вызывается при создании объекта класса
     constructor() {
-        this._isAuth = false
+        this._isAuth = true
         this._user = {}
         makeAutoObservable(this)
     }
